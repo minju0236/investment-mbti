@@ -70,7 +70,7 @@ document.getElementById("resultBtn").onclick = () => {
 
     const result =
         (score.R >= score.S ? "R" : "S") +
-        (score.T >= score.Q ? "L" : "Q") +
+        (score.L >= score.Q ? "L" : "Q") +
         (score.A >= score.P ? "A" : "P") +
         (score.C >= score.F ? "C" : "F");
 
