@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투자 MBTI</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <nav>
+                    <a href="questions.html">투자 MBTI</a>
+                    <a href="result.html">분석 결과</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="hero">
+
+        <div class="hero-container">
+
+            <div class="hero-left">
+
+                <p class="sub">나의 투자 성향을 알아보는</p>
+
+                <div class="hero-title">
+                    투자 <span>MBTI</span> 테스트
+                </div>
+
+                <p class="desc">
+                    12개의 질문으로 나의 투자 스타일을 분석하고<br>
+                    나와 어울리는 곰 유형을 찾아보세요
+                </p>
+
+                <div class="input-box">
+                    <label>닉네임을 입력해주세요</label>
+                    <input type="text" placeholder="ex. 홍길동">
+                </div>
+
+                <button class="start-btn" id="startBtn">테스트 시작하기</button>
+
+            </div>
+
+
+            <div class="hero-right">
+                <img src="../img/graph.png" alt="investment graph">
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="company">(주) 투자 MBTI</div>
+
+            <p>
+                사업자 등록번호 : 000-00-00000 | 대표 : 이민주<br>
+                호스팅 서비스 : WISDOM | 통신판매업 신고번호 : 제2026-서울중구-0000호<br>
+                서울특별시 중구 청파로 463 (중림동) 3층 WISDOM 강의실<br>
+                고객센터 : 서울특별시 중구 청파로 463 (중림동) 3층 WISDOM 강의실
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const startBtn = document.getElementById("startBtn");
+        const nicknameInput = document.querySelector(".input-box input");
+
+        startBtn.addEventListener("click", () => {
+
+            const nickname = nicknameInput.value.trim();
+
+            if (!nickname) {
+                alert("닉네임을 입력해주세요.");
+                return;
+            }
+
+            console.log(nickname);
+
+            localStorage.setItem("nickname", nickname);
+
+            window.location.href = "questions.html";
+
+        });
+    </script>
+</body>
+
+</html>
