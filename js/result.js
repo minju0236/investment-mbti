@@ -35,8 +35,8 @@ function percent(a, b) {
 const riskLeft = -percent(score.R, score.S);
 const riskRight = percent(score.S, score.R);
 
-const termLeft = -percent(score.T, score.Q);
-const termRight = percent(score.Q, score.T);
+const termLeft = -percent(score.L, score.Q);
+const termRight = percent(score.Q, score.L);
 
 const styleLeft = -percent(score.A, score.P);
 const styleRight = percent(score.P, score.A);
@@ -88,7 +88,7 @@ new Chart(ctx, {
 
                         const labels = [
                             ["R", "S"],
-                            ["T", "Q"],
+                            ["L", "Q"],
                             ["A", "P"],
                             ["C", "F"]
                         ];

@@ -1,7 +1,7 @@
 const container = document.getElementById("questions");
 const progressBar = document.querySelector(".progress-bar");
 
-data.forEach((q, index) => {
+questionsData.forEach((q, index) => {
 
     const qDiv = document.createElement("div");
     qDiv.className = "question-block";
@@ -52,7 +52,7 @@ document.getElementById("resultBtn").onclick = () => {
 
     let answered = 0;
 
-    data.forEach((q, index) => {
+    questionsData.forEach((q, index) => {
 
         const checked = document.querySelector(`input[name="q${index}"]:checked`);
 

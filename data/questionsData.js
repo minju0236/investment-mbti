@@ -1,4 +1,4 @@
-const data = [
+const questionsData = [
 
     {
         type: "risk",
@@ -37,8 +37,8 @@ const data = [
         type: "term",
         question: "투자를 시작한다면 어떤 방식이 편한가?",
         options: [
-            { text: "길게 묵혀두는 투자", value: "T" },
-            { text: "중장기 투자", value: "T" },
+            { text: "길게 묵혀두는 투자", value: "L" },
+            { text: "중장기 투자", value: "L" },
             { text: "몇 달 단위 투자", value: "Q" },
             { text: "짧게 사고파는 투자", value: "Q" }
         ]
@@ -48,8 +48,8 @@ const data = [
         type: "term",
         question: "주식이 20% 수익이 났다. 당신은?",
         options: [
-            { text: "더 오래 가져간다", value: "T" },
-            { text: "조금 더 기다린다", value: "T" },
+            { text: "더 오래 가져간다", value: "L" },
+            { text: "조금 더 기다린다", value: "L" },
             { text: "일부 매도한다", value: "Q" },
             { text: "바로 수익 실현한다", value: "Q" }
         ]
@@ -59,8 +59,8 @@ const data = [
         type: "term",
         question: "투자 계획을 세울 때 나는",
         options: [
-            { text: "몇 년 단위로 생각한다", value: "T" },
-            { text: "1년 정도 생각한다", value: "T" },
+            { text: "몇 년 단위로 생각한다", value: "L" },
+            { text: "1년 정도 생각한다", value: "L" },
             { text: "몇 달 단위로 본다", value: "Q" },
             { text: "단기 흐름 위주로 본다", value: "Q" }
         ]
