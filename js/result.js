@@ -57,7 +57,7 @@ new Chart(ctx, {
                 data: [riskLeft, termLeft, styleLeft, emotionLeft],
                 backgroundColor: [
                     color(score.S, score.R),
-                    color(score.Q, score.T),
+                    color(score.Q, score.L),
                     color(score.P, score.A),
                     color(score.F, score.C)
                 ],
@@ -68,7 +68,7 @@ new Chart(ctx, {
                 data: [riskRight, termRight, styleRight, emotionRight],
                 backgroundColor: [
                     color(score.R, score.S),
-                    color(score.T, score.Q),
+                    color(score.L, score.Q),
                     color(score.A, score.P),
                     color(score.C, score.F)
                 ],

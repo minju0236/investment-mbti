@@ -47,7 +47,7 @@ document.addEventListener("change", (e) => {
 document.getElementById("resultBtn").onclick = () => {
 
     let score = {
-        R: 0, S: 0, T: 0, Q: 0, A: 0, P: 0, C: 0, F: 0
+        R: 0, S: 0, L: 0, Q: 0, A: 0, P: 0, C: 0, F: 0
     };
 
     let answered = 0;
@@ -70,7 +70,7 @@ document.getElementById("resultBtn").onclick = () => {
 
     const result =
         (score.R >= score.S ? "R" : "S") +
-        (score.T >= score.Q ? "T" : "Q") +
+        (score.T >= score.Q ? "L" : "Q") +
         (score.A >= score.P ? "A" : "P") +
         (score.C >= score.F ? "C" : "F");
 
